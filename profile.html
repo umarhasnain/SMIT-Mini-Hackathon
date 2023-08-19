@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</head>
+
+<body>
+    <div><nav class="navbar navbar-expand-lg  navbar_css">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#" id="nav_user">Personal Blogging App</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                
+    
+            </ul>
+            <span class="btn btn-primary login_nav" >
+                <a href="register.html" class="login_navs">Login</a>
+            </span>
+          </div>
+        </div>
+      </nav></div>
+      
+    <div class="container">
+        <div class="row justify-content-center login-container">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-center">
+                            <h4>Profile</h4>
+                            <a href="chat.html">
+                                <i class="bi bi-chat-left-text chat-icon"></i>
+                            </a>
+                        </div>
+                        <div class="user-picture">
+                            <img id="user-profile" src="images/user.png" alt="">
+                            <button id="upload">Upload</button>
+                            <label class="camera-icon" for="file-input">
+                                <i class="bi bi-camera-fill"></i>
+                            </label>
+                            <input id="file-input" style="display: none;" type="file">
+                        </div>
+                        <div class="mt-4">
+                            <input class="form-control" type="text" placeholder="Full name" id="fullName">
+                        </div>
+                        <div class="mt-4">
+                            <input class="form-control" type="email" placeholder="Email" id="email">
+                        </div>
+
+                        <div class="d-grid mt-4">
+                            <button id="update-profile" class="btn btn-primary" type="button">Update profile</button>
+                        </div>
+                        <div class="d-grid mt-4">
+                            <button id="logout-btn" class="btn btn-outline-danger" type="button">LOGOUT</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js" type="module"></script>
+</body>
+
+</html>
